@@ -131,5 +131,7 @@ Elapsed time: 02:23:00
 ![image](https://github.com/kevin-v96/llama3-8b-alpaca-finetune/assets/11131188/7c2bc306-44b4-4211-887b-1bcc29885bf6)
 
 
-A lot of our scores seem to be lower than the base model - something seems to have gone wrong in training. We should find out how it performs when actually prompted.
+A lot of our scores seem to be lower than the base model - something seems to have gone wrong in training.
+This could possibly be because we used the 4-bit version from Unsloth, as 4-bit versions reportedly perform much worse than 8-,16-, and 32-bit versions of the same models.
+We should find out how it performs when actually prompted. 
 
