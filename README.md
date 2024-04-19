@@ -123,14 +123,13 @@ Average: 59.54%
 
 Average: 37.32%
 
+Average score: 49.92%
+
+Elapsed time: 02:23:00
+
 ### Base model scores
 ![image](https://github.com/kevin-v96/llama3-8b-alpaca-finetune/assets/11131188/7c2bc306-44b4-4211-887b-1bcc29885bf6)
 
 
 A lot of our scores seem to be lower than the base model - something seems to have gone wrong in training. We should find out how it performs when actually prompted.
 
-
-
-Average score: 49.92%
-
-Elapsed time: 02:23:00
