@@ -1,7 +1,7 @@
 # llama3-8b-alpaca-finetune
 Llama 3 (8B) finetuned on [Alpaca instruction-tuning dataset generated with GPT4](https://huggingface.co/datasets/vicgalle/alpaca-gpt4)
 
-### Training run details
+## Training run details
 
 This is the training run on Weights and Biases:
 <img width="1364" alt="image" src="https://github.com/kevin-v96/llama3-8b-alpaca-finetune/assets/11131188/5f5ad090-5f6e-42e4-b0ba-ca0594e7fa84">
@@ -19,10 +19,10 @@ Quoting below
 
 `{{ model_answer_1 }}<|eot_id|>`
 
-### Evaluation Details
+## Evaluation Details
 Evaluated using AutoEval: https://github.com/mlabonne/llm-autoeval
 
-### Evaluation Scores
+## Evaluation Scores
 This is currently Meta-Llama3-8B on [eqbench](https://eqbench.com/):
 <img width="1306" alt="image" src="https://github.com/kevin-v96/llama3-8b-alpaca-finetune/assets/11131188/87d8393f-77e7-45b6-ac45-18ae812beda0">
 
