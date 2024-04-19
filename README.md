@@ -1,10 +1,23 @@
 # llama3-8b-alpaca-finetune
 Llama 3 (8B) finetuned on [Alpaca instruction-tuning dataset generated with GPT4](https://huggingface.co/datasets/vicgalle/alpaca-gpt4)
 
-### Training run
+### Training run details
 
 This is the training run on Weights and Biases:
 <img width="1364" alt="image" src="https://github.com/kevin-v96/llama3-8b-alpaca-finetune/assets/11131188/5f5ad090-5f6e-42e4-b0ba-ca0594e7fa84">
+
+Here is the instruction template https://github.com/meta-llama/llama3?tab=readme-ov-file#instruction-tuned-models
+Quoting below
+
+The prompt begins with a <|begin_of_text|> special token, after which one or more messages follow. Each message starts with the <|start_header_id|> tag, the role system, user or assistant, and the <|end_header_id|> tag. After a double newline \n\n the contents of the message follow. The end of each message is marked by the <|eot_id|> token.
+
+`<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+{{ system_prompt }}<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{{ user_msg_1 }}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+{{ model_answer_1 }}<|eot_id|>`
 
 ### Evaluation Details
 Evaluated using AutoEval: https://github.com/mlabonne/llm-autoeval
@@ -107,6 +120,7 @@ Average: 59.54%
 |bigbench_tracking_shuffled_objects_five_objects |      0|multiple_choice_grade|21.60|±  |  1.16|
 |bigbench_tracking_shuffled_objects_seven_objects|      0|multiple_choice_grade|15.83|±  |  0.87|
 |bigbench_tracking_shuffled_objects_three_objects|      0|multiple_choice_grade|42.33|±  |  2.86|
+
 
 Average: 37.32%
 
