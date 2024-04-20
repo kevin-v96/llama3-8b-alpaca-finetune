@@ -1,5 +1,5 @@
 # llama3-8b-alpaca-finetune
-Llama 3 (8B) finetuned on [Alpaca instruction-tuning dataset generated with GPT4](https://huggingface.co/datasets/vicgalle/alpaca-gpt4)
+Llama 3 (8B) finetuned on [Alpaca instruction-tuning dataset generated with GPT4](https://huggingface.co/datasets/vicgalle/alpaca-gpt4). The model can be found (here)[https://huggingface.co/MadMarx37/llama3-8b-alpaca-lora-peft].
 
 ## Training run details
 
