@@ -127,11 +127,14 @@ Average score: 49.92%
 
 Elapsed time: 02:23:00
 
-### Base model scores
+### Comparison
 ![image](https://github.com/kevin-v96/llama3-8b-alpaca-finetune/assets/11131188/7c2bc306-44b4-4211-887b-1bcc29885bf6)
 
+|                                          Model                                          |AGIEval|GPT4All|TruthfulQA|Bigbench|Average|
+|-----------------------------------------------------------------------------------------|------:|------:|---------:|-------:|------:|
+|[llama3-8b-alpaca-lora-peft](https://huggingface.co/MadMarx37/llama3-8b-alpaca-lora-peft)|     32|  70.82|     59.54|   37.32|  49.92|
+|[meta-llama/Meta-Llama-3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B)          |   31.1|  69.95|     43.91|    36.7|  45.42|
+|[meta-llama/Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)|     41.22|  69.86|     51.65|   42.64|  51.34|
 
-A lot of our scores seem to be lower than the base model - something seems to have gone wrong in training.
-This could possibly be because we used the 4-bit version from Unsloth, as 4-bit versions reportedly perform much worse than 8-,16-, and 32-bit versions of the same models.
-We should find out how it performs when actually prompted. 
+The base model is quite good, but on similar evals, our model seems to increase most of the scores, but it doesn't match the Instruct variant from Llama (as expected - they have much more alignment data and compute than we do). We could possibly make this better with alignment techniques like DPO or mixed SFT-and-alignment techniques like ORPO.
 
